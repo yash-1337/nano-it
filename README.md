@@ -5,11 +5,11 @@ This is a Mean Stack URL Shortener that can easily be hosted on Heroku, as it in
 
 This URL shortener uses Node, Express, MongoDB, and Angular 1.6.0
 
-Nano-It takes a long url, gives it an id and stores it in an object inside the database. Then it makes a new link from its id and connects the new link to the old one. Every time someone clicks on that new link, the browser redirects to the long link.
+Nano-It takes a long url, gives it an id and stores it in an object inside the database. Then it makes a new link from its id and connects the new link to the old one. Every time someone clicks on that new link, the browser redirects to the long link. To check it out, go to [https://nano-it.herokuapp.com/](https://nano-it.herokuapp.com/)
 
 ## Make your own Nano-It!
 
-Since this is meant to be hosted on Heroku, it includes a ready-to-go Procfile. To make the url shortener work with your own heroku app, you will have to clone this repository, and push it to your own repo. After that you will have to create a Heroku account. Create a new app, and connect your github repo to that app from the Heroku Dashboard. After you have connected your Heroku app to your repository, go to [mlab.com](http://mlab.com). Create an account, and then create a new free sandbox database. You can find many tutorials online on how to do this. Create a new collection called "url", and then create a new user with the desired username and password.Edit the JSON in the url collection so that it looks like this:
+Since this is meant to be hosted on Heroku, it includes a ready-to-go Procfile. To make the url shortener work with your own heroku app, you will have to clone this repository, and push it to your own repo. After that you will have to create a Heroku account. Create a new app, and connect your github repo to that app from the Heroku Dashboard. After you have connected your Heroku app to your repository, go to [http://mlab.com/](http://mlab.com). Create an account, and then create a new free sandbox database. You can find many tutorials online on how to do this. Create a new collection called "url", and then create a new user with the desired username and password.Edit the JSON in the url collection so that it looks like this:
 ```json
 {
     "_id1": 1,
