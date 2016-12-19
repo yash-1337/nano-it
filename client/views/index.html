@@ -39,7 +39,7 @@
             </tr>
             <tr ng-repeat="link in urls | orderBy : 'id'">
                 <td class="longURL"><a href="{{link.url}}">{{link.url}}</a></td>
-                <td><a href="/uY{{link.id}}">localhost:3000/uY{{link.id}}</a></td>
+                <td><a href="/uY{{link.id}}">https://nano-it.herokuapp.com/{{link.id}}</a></td>
                 <td>{{link.date}}</td>
             </tr>
         </table>
