@@ -1,11 +1,11 @@
-# Nano-It
+.# Nano-It
 ## A Mean Stack URL Shortener
 
 This is a Mean Stack URL Shortener that can easily be hosted on Heroku, as it includes a Procfile.txt
 
 This URL shortener uses Node, Express, MongoDB, and Angular 1.6.0
 
-Nano-It takes a long url, gives it an id and stores it in an object inside the database. Then it makes a new link from its id and connects the new link to the old one. Every time someone clicks on that new link, the browser redirects to the long link. To check it out, go to [https://nano-it.herokuapp.com/](https://nano-it.herokuapp.com/)
+Nano-It takes a long url, gives it an id and stores it in an object inside the database. Then it makes a new link from its id and connects the new link to the old one. Every time someone clicks on that new link, the browser redirects to the long link. To check it out, go to [https://nano-it.herokuapp.com/](https://nano-it.herokuapp.com/).
 
 ## Make your own Nano-It!
 
