@@ -41,7 +41,7 @@ app.controller("urlController", ['$scope', '$http', "$rootScope", function ($sco
             simplifyBtnPress = true;
             errorText.style.display = "none";
             $http.post("/urlinput", urlData).then(function successCallback(response) {
-                document.getElementById("outputLink").innerHTML = "The shortened URL is <strong><a href='" + response.data + "'>https://nano-it.herokuapp.com/" + response.data + "</a></strong>"
+                document.getElementById("outputLink").innerHTML = "The shortened URL is <strong><a href='" + response.data + "'>https://nano-it.herokuapp.com" + response.data + "</a></strong>"
                 updateList();
             });
         } else {
