@@ -1,4 +1,4 @@
-.# Nano-It
+# Nano-It
 ## A Mean Stack URL Shortener
 
 This is a Mean Stack URL Shortener that can easily be hosted on Heroku, as it includes a Procfile.txt
