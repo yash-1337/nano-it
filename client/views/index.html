@@ -1,0 +1,51 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NanoUrl</title>
+    <meta name="description" content="NanoUrl URL Shortener">
+    <meta name="author" content="Yash Patel">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" crossorigin="anonymous">
+</head>
+
+<body ng-app="urlPage">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <h2 id="title">NanoUrl</h2>
+    </nav>
+    <div class="jumbotron" id="infoDiv">
+        <img src="/css/link.png" width="64" height="64">
+        <h2>NanoUrl : A MEAN Stack Url Shortener</h2>
+        <p id="infoTitle">This is a simple URL shortening service like <a href="http://goo.gl">goo.gl</a> and <a href="http://bitly.com">bitly.com</a>            which uses Node, Express, Angular, and MongoDB, also known as the Mean Stack.</p>
+    </div>
+    <div class="input-group single-div" id="addLinkDiv" ng-controller="urlController as url">
+        <h2> Simplify your link <span class="glyphicon glyphicon-random"></span></h2>
+        <input type="text" placeholder="URL" class="form-control ng-pristine ng-valid ng-touched" ng-model="url.input.url">
+        <h5><span class="glyphicon glyphicon-alert" style="color:orange"></span> <strong>Attention:</strong> Please use full URL format (http://www.example.com/abc)</h5>
+        <div class="alert alert-danger" role="alert" id="errorText">
+            <p>please use full URL format with the correct protocol (Ex. http://www.example.com/abc)</p>
+        </div>
+        <button type="button" class="btn btn-primary" ng-click="url.submit()">Simplify <span class="glyphicon glyphicon-chevron-right"></span></button>
+        <h4 id="outputLink"></h4>
+    </div>
+    <div id="allLinksDiv" class="single-div" ng-controller="urlController">
+        <h2> All Links <span class="glyphicon glyphicon-th-list"></span></h2>
+        <table style="width:650px">
+            <tr>
+                <th>Long URL</th>
+                <th>Short URL</th>
+                <th>Date Created</th>
+            </tr>
+            <tr ng-repeat="link in urls | orderBy : 'id'">
+                <td class="longURL"><a href="{{link.url}}">{{link.url}}</a></td>
+                <td><a href="/uY{{link.id}}">localhost:3000/uY{{link.id}}</a></td>
+                <td>{{link.date}}</td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
+    <script src="/js/controllers/urlController.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+.navbar {
+    background-color: rgb(30, 30, 30)
+}
+
+#title {
+    color: rgb(200, 200, 200);
+    position: relative;
+    left: 30px;
+}
+
+#title:hover {
+    color: rgb(255, 255, 255);
+}
+
+#infoDiv {
+    margin-top: 50px;
+    text-align: center;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(200, 200, 200);
+    border-radius: 5px;
+}
+
+#infoText {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#addLinkDiv {
+    margin-left: 20px;
+    float: left;
+}
+
+#allLinksDiv {
+    position: relative;
+    margin-left: 10%;
+    width: auto;
+    display: inline-block;
+}
+
+#errorText {
+    display: none;
+}
+
+table,
+th,
+td {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+
+td {
+    border-radius: 5px;
+    border-bottom: 2px outset gray;
+    border-collapse: collapse;
+    word-break: break-all;
+}
