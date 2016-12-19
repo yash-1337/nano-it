@@ -22,4 +22,4 @@ Since this is meant to be hosted on Heroku, it includes a ready-to-go Procfile. 
     ]
 }
 ```
-Go back to the Heroku Dashboard. Now, you will have to create a config var. Name the config var exactly "MONGO_URI" (without quotation marks) and its value should be the specific URI that connects to your Mlab database (Ex. mongodb://user:password@1234.mlab.com:1234/database). Save you config var and deploy your app. **Profit!**
+Go back to the Heroku Dashboard. Now, you will have to create a config var. Name the config var exactly "MONGO_URI" (without quotation marks) and its value should be the specific URI that connects to your Mlab database (Ex. `mongodb://user:password@1234.mlab.com:1234/database`). Save you config var and deploy your app. **Profit!**
