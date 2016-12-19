@@ -3,7 +3,7 @@ var express = require('express'),
 
 var MongoClient = require('mongodb').MongoClient;
 
-var url = "mongodb://yash1337:yash1337@ds139288.mlab.com:39288/url-shortener";
+var url = process.env.MONGO_URI;
 
 
 var bodyParser = require('body-parser');
