@@ -1,4 +1,4 @@
-uY<!Doctype html>
+<!Doctype html>
 <html lang="en">
 
 <head>
@@ -32,15 +32,15 @@ uY<!Doctype html>
     </div>
     <div id="allLinksDiv" class="single-div" ng-controller="urlController">
         <h2> All Links <span class="glyphicon glyphicon-th-list"></span></h2>
-        <table style="width:750px">
+        <table style="width:700px">
             <tr>
                 <th>Long URL</th>
                 <th>Short URL</th>
                 <th>Date Created</th>
             </tr>
-            <tr ng-repeat="link in urls | orderBy : 'id'">
+            <tr ng-repeat="link in urls | orderBy : 'id':true">
                 <td class="longURL"><a href="{{link.url}}">{{link.url}}</a></td>
-                <td><a href="/uY{{link.id}}">https://nano-it.herokuapp.com/uY{{link.id}}</a></td>
+                <td><a href="/uY{{link.id}}"> https://nano-it.herokuapp.com/uY{{link.id}}</a></td>
                 <td>{{link.date}}</td>
             </tr>
         </table>
