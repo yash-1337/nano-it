@@ -62,3 +62,10 @@ td {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.shortURL {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
