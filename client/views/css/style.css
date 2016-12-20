@@ -13,7 +13,7 @@
 }
 
 #infoDiv {
-    margin-top: 25px;
+    margin-top: 50px;
     text-align: center;
     border: solid;
     border-width: 1px;
@@ -54,5 +54,11 @@ td {
     border-radius: 5px;
     border-bottom: 2px outset gray;
     border-collapse: collapse;
-    word-break: break-all;
+}
+
+.longURL {
+    max-width: 275px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
